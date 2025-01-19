@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #8a2c7c; /* Màu nền tím */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-info span, .contact-info a {
+    color: white;
+    text-decoration: none;
+}
+.contact-info i {
+    color: white;
+    margin-right: 5px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.social-icons a:hover {
+    color: #e1e1e1; /* Màu sáng hơn khi hover */
+}
+.contact-info svg {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    fill: white; /* Màu của icon địa chỉ */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+.image {
+    width: 100px; /* Kích thước hình ảnh */
+    height: 100px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và chữ */
+}
+
+.school-name {
+    font-family: script;
+    font-size: 50px;
+    text-align: center; /* Move center alignment here */
+    animation: blink-color 1s infinite, blink 1s infinite; /* Thêm animation nhấp nháy và thay đổi màu */
+}
+/* Thêm hiệu ứng phát sáng cho chữ */
+.glowing-text {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    animation: glowing 1.5s ease-in-out infinite;
+    color: #fff; /* Màu chữ mặc định */
+}
+
+/* Hiệu ứng phát sáng (glow effect) */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
+        color: #ff00ff; /* Màu chữ khi phát sáng */
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
+        color: #fff; /* Màu chữ bình thường */
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
+        color: #ff00ff;
+    }
+}
